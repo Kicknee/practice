@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ET712 Css_1 Prac_14</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">           
+
+        <style>
+          body {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(400px, 1fr));
+        grid-template-rows: 250px 250px;
+        grid-gap: 5px;
+        
+
+         
+          }
+          .box {
+            background-color: black;
+            padding: 0px;
+            
+          }
+          img {
+            width: 200px;
+            
+          }
+          .a {
+            justify-self: end;
+          }
+          .b {
+            justify-self: center;
+            align-self: start;
+          }
+          .c {
+            justify-self: start;;
+            align-self: start;
+            
+          }
+          .d {
+            justify-items: start;
+            align-self: end;
+          }
+        </style>
+        
+    </head>
+    <body>
+           
+        <div class="box a"><img src="img/bahamas.jpg"></div>
+        <div class="box b"><img src="img/bahamas.jpg"></div>
+        <div class="box c"><img src="img/bahamas.jpg"></div>
+        <div class="box d"><img src="img/bahamas.jpg"></div>
+        
+        
+
+    </body>
+
+</html>

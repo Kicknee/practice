@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ET712 Css_1 Prac_11</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">           
+
+        <style>
+         body {
+           display: grid;
+           grid-template-columns: 200px 100px 450px 1fr;
+           grid-template-rows: 200px 100px 50px;
+          grid-gap: 10px;
+         }
+         .box {
+           background-color: black;
+           padding: 10px;
+           color: white;
+         }
+
+         .b {
+          grid-column: 2/3;
+           grid-row: 2/ span 2;
+         }
+         .d {
+          grid-column: 1/ span 3;
+           grid-row: 3/4;
+           z-index: 1;
+           background-color: aquamarine;
+           opacity: .7;
+         }
+         .c {
+          grid-column: 3/4;
+           grid-row: 1/2;
+         }
+         .e {
+          grid-column: 4/5;
+           grid-row: 2/ span 2;
+         }
+         .f {
+           background-color: blue;
+           grid-column: 1/ span 2;
+           grid-row: 1/span 2;
+           z-index: 1;
+           opacity: .7;
+         }
+         .a {
+          background-color: red;
+           grid-column: 3/ span 2;
+           grid-row: 2/3;
+           z-index: 1;
+           opacity: .7;
+         }
+
+        </style>
+        
+    </head>
+    <body>
+           
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+        
+
+    </body>
+
+</html>
